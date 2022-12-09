@@ -9,8 +9,9 @@ python -m uvicorn main:app --reload
 
 #### Example GET request from localhost
 ```Javascript
- fetch("localhost:port")
-            .then((Response) => {return Response.json()})
-             .then((data) => {console.log(data);})
-            .catch(console.log("Erro"))
+ fetch("localhost:port").then((Response) => {
+            return Response.json()
+        }).then((data) => {
+            console.log(data);
+        })
 ```
